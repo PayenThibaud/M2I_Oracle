@@ -1,10 +1,10 @@
 package org.example;
 
-public abstract class LibraryItem {
+public sealed abstract class LibraryItem permits Book, Magazine{
 
-    int id;
-    String title;
-    int publicationYear;
+    protected int id;
+    protected String title;
+    protected int publicationYear;
 
     public LibraryItem(int id, String title, int publicationYear) {
         this.id = id;

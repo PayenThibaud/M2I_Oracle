@@ -2,9 +2,9 @@ package org.example;
 
 public class BorrowRecord {
 
-    int itemId;
-    String borrowerName;
-    String borrowerDate;
+    private int itemId;
+    private String borrowerName;
+    private String borrowerDate;
 
     public BorrowRecord(int itemId, String borrowerName, String borrowerDate) {
         this.itemId = itemId;
@@ -14,6 +14,6 @@ public class BorrowRecord {
 
     @Override
     public String toString() {
-        return "BorrowRecord{" + "itemId= " + itemId + "borrowerName= " + borrowerName + "borrowerDate= " + borrowerDate +'}';
+        return "BorrowRecord {" + " itemId= " + itemId + " borrowerName= " + borrowerName + " borrowerDate= " + borrowerDate +'}';
     }
 }

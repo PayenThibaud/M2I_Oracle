@@ -1,8 +1,9 @@
 package org.example;
 
-public class Book extends LibraryItem {
-    String author;
-    String genre;
+public non-sealed class Book extends LibraryItem {
+
+    private String author;
+    private String genre;
 
     public Book(String author, String genre, int id, String title, int publicationYear ) {
         super(id, title, publicationYear);
