@@ -1,18 +1,28 @@
 package org.example;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Map<String , String> dictionary = new HashMap<String , String>();
+//        Map<String , String> dictionary = new HashMap<String , String>();
+//
+//        dictionary.put("db.host", "localhost");
+//        dictionary.put("db.port", "3306");
+//        dictionary.put("db.user", "root");
+//
+//        ConfigurationManager configurationManager = ConfigurationManager.getInstance(dictionary);
 
-        dictionary.put("db.host", "localhost");
-        dictionary.put("db.port", "3306");
-        dictionary.put("db.user", "root");
+        ObjectMapper objectMapper = new ObjectMapper();
+        Map<String, String> dictionary = objectMapper.readValue(new File("src/main/resources/fichier.json"), Map.class);
 
         ConfigurationManager configurationManager = ConfigurationManager.getInstance(dictionary);
+
 
 
         Map<String , String> dictionary2 = new HashMap<String , String>();
@@ -35,13 +45,14 @@ public class Main {
         System.out.println(configurationManager.getConfig());
 
 
-        
+
         dictionary.put("aaaaa", "aaaa");
         dictionary.put(",,,,", ",,,,");
         dictionary.put("r", "r");
 
 
         System.out.println(configurationManager.getConfig());
+
 
     }
 }
