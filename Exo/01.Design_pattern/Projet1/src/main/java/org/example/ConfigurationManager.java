@@ -22,6 +22,6 @@ public class ConfigurationManager {
     }
 
     public String getValue(String key) {
-        return config.get(key);
+        return config.getOrDefault(key, "nop");
     }
 }

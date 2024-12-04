@@ -30,6 +30,7 @@ public class Main {
         dictionary2.put("aaaaa", "aaaa");
         dictionary2.put(",,,,", ",,,,");
         dictionary2.put("r", "r");
+        dictionary.remove("db.host");
 
         ConfigurationManager configurationManager2 = ConfigurationManager.getInstance(dictionary2);
 
