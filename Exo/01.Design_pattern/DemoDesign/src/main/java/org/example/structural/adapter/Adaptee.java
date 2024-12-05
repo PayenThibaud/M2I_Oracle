@@ -1,4 +1,4 @@
-package org.example.structural;
+package org.example.structural.adapter;
 
 public class Adaptee {
 
