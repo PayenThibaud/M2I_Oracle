@@ -1,4 +1,4 @@
-package org.example.creational;
+package org.example.creational.singleton;
 
 public class SingletonExample {
 

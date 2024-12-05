@@ -41,7 +41,7 @@ public class EventManager {
     }
 
 
-    
+
 
     public void soutName(String message) {
         System.out.println("Votre nom :");
