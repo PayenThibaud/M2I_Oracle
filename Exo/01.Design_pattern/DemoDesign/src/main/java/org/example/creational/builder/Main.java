@@ -3,14 +3,14 @@ package org.example.creational.builder;
 public class Main {
     public static void main(String[] args) {
         Person person = Person.builder()
-                .setFirstName("John")
-                .setLastName("Doe")
-                .setAge(30)
+                .setFirstName("Titi")
+                .setLastName("Tata")
+                .setAge(20)
                 .build();
 
         Person person1 = Person.builder()
-                .setFirstName("John")
-                .setAge(30)
+                .setFirstName("Toto")
+                .setAge(990)
                 .build();
 
         System.out.println(person.toString());
