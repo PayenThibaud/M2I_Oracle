@@ -1,4 +1,4 @@
-package org.example.behavioral;
+package org.example.behavioral.Observer;
 
 public class MyObserver implements Observer {
 
