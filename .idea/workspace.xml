@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f24a40b0-9e70-4113-b816-af30c8e50604" name="Changes" comment="" />
+    <list default="true" id="f24a40b0-9e70-4113-b816-af30c8e50604" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024" beforeDir="false" afterPath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024/04_Stream/Exercice/Exercice1/films_with_genres 1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024/04_Stream/Exercice/Exercice3/books_dataset.csv" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +52,7 @@
       <workItem from="1733480278262" duration="4000" />
       <workItem from="1733734549086" duration="14000" />
       <workItem from="1733821897889" duration="22000" />
+      <workItem from="1733999340230" duration="23000" />
     </task>
     <servers />
   </component>
