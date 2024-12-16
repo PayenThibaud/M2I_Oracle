@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f24a40b0-9e70-4113-b816-af30c8e50604" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/annotation/LoginAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/aspect/LoginAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/controller/ObjetCelesteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/entity/ObjetCeleste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/service/IObjetCelesteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/service/ObjetCelesteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024" beforeDir="false" afterPath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024/04_Stream/Exercice/Exercice1/films_with_genres 1.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024/04_Stream/Exercice/Exercice3/books_dataset.csv" beforeDir="false" />
@@ -53,6 +59,7 @@
       <workItem from="1733734549086" duration="14000" />
       <workItem from="1733821897889" duration="22000" />
       <workItem from="1733999340230" duration="23000" />
+      <workItem from="1734342677180" duration="173000" />
     </task>
     <servers />
   </component>
