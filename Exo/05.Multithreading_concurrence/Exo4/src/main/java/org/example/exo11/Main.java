@@ -39,7 +39,7 @@ public class Main {
 
     private static void SynchronizationBankWithdraw(BanAccount bank) throws InterruptedException {
         Thread[] threads = createThreads(() -> {
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < 10; i++) {
                 synchronized (bank) {
                     bank.withdraw(10);
                     System.out.println(Thread.currentThread().getName() + " withdraw 10");
