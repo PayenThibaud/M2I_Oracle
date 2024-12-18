@@ -42,7 +42,6 @@ class Imprimante {
                 System.out.println(taskName + " n'a pas pu accéder à l'imprimante (temps d'attente dépassé).");
             }
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
             System.out.println(taskName + " a été interrompu.");
         }
     }
