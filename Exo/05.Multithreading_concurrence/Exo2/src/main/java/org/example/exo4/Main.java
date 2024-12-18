@@ -13,6 +13,7 @@ ExecutorServiceExo();
 
         for (int i = 0; i < 10; i++) {
             int finalI = i;
+            // Executor.execute() si pas de retour
             executor.submit(() -> System.out.println("Tache " + (finalI + 1 ) + " executer par "+Thread.currentThread().getName()));
         }
         executor.shutdown();
