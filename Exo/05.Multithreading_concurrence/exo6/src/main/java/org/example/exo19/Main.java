@@ -3,12 +3,11 @@ package org.example.exo19;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-        ConcurrentLinkedQueue queue = new ConcurrentLinkedQueue();
+        ConcurrentLinkedQueue<String> queue = new ConcurrentLinkedQueue<>();
 
         Runnable ajout = new Runnable() {
 
