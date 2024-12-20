@@ -20,5 +20,6 @@ public class Main {
         }, executor);
 
         step3.join();
+        System.out.println("fini");
     }
 }

@@ -1,14 +1,12 @@
-package org.example.exo23.entity;
+package packageSpecial;
 
-public class Article {
+public class Jouet {
     private int id;
     private String nom;
-    private double prix;
 
-    public Article(int id, String nom, double prix) {
+    public Jouet(int id, String nom) {
         this.id = id;
         this.nom = nom;
-        this.prix = prix;
     }
 
     public int getId() {
@@ -27,15 +25,11 @@ public class Article {
         this.nom = nom;
     }
 
-    public double getPrix() {
-        return prix;
-    }
-
-    public void setPrix(double prix) {
-        this.prix = prix;
-    }
-
+    @Override
     public String toString() {
-        return nom + " " + prix;
+        return "Jouet{" +
+                "id=" + id +
+                ", nom='" + nom + '\'' +
+                '}';
     }
 }

@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f24a40b0-9e70-4113-b816-af30c8e50604" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/annotation/LoginAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/aspect/LoginAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/controller/ObjetCelesteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/entity/ObjetCeleste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/service/IObjetCelesteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exo/03.Gestion_avancee_erreurs/Aspect2/src/main/java/org/example/aspect2/service/ObjetCelesteService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024" beforeDir="false" afterPath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024/04_Stream/Exercice/Exercice1/films_with_genres 1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/M2I-JAVA_PERF-02122024/04_Stream/Exercice/Exercice3/books_dataset.csv" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/entity/Commande.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/entity/ECommercePlatform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/entity/Panier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/enums/EtatCommande.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo22/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo22/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/entity/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/entity/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/entity/Utilisateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/entity/Utilisateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exo/05.Multithreading_concurrence/exo6/src/main/java/org/example/exo23/service/ArticleService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,20 +29,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -60,6 +62,7 @@
       <workItem from="1733821897889" duration="22000" />
       <workItem from="1733999340230" duration="23000" />
       <workItem from="1734342677180" duration="173000" />
+      <workItem from="1734702621843" duration="76000" />
     </task>
     <servers />
   </component>
