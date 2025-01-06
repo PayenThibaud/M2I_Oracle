@@ -1,0 +1,3 @@
+module NotificationService {
+    exports packageNotification;
+}
