@@ -157,9 +157,9 @@ public class JournalHandler {
 
             Scanner sc = new Scanner(System.in);
             System.out.println("Entrer le chiffre de l activiter a rajouter au journal");
-            String chiffreActiviter = sc.nextLine();
+            int chiffreActiviter = Integer.parseInt(sc.nextLine());
 
-            String nomActiviter = choixLimiter.get(nbCompteurs - 1);
+            String nomActiviter = choixLimiter.get(chiffreActiviter);
 
 
             String journal = "";
