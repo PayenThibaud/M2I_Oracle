@@ -1,5 +1,6 @@
 Coucou
+java
 Java
 Java
-Salut Java
+Salut Javascript
 bye

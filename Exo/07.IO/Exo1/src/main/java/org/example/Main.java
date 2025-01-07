@@ -1,21 +1,20 @@
 package org.example;
 
 import java.io.*;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
 
         int nbJava = 0;
 
-
         try (BufferedReader reader = new BufferedReader(new FileReader("texte.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                if (line.contains("Java")) {
+                if (Pattern.matches(".*\\b[Jj]ava\\b.*", line)) {
                     nbJava++;
                 }
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -26,6 +25,5 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 }
