@@ -1,6 +1,6 @@
 Coucou
 java
 Java
-Java
+JAVa  c
 Salut Javascript
 bye

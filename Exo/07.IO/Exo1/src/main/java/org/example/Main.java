@@ -11,7 +11,7 @@ public class Main {
         try (BufferedReader reader = new BufferedReader(new FileReader("texte.txt"))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                if (Pattern.matches(".*\\b[Jj]ava\\b.*", line)) {
+                if (Pattern.matches("(?i).*\\bjava\\b.*", line)) {
                     nbJava++;
                 }
             }
