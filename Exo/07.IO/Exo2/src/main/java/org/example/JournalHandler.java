@@ -45,14 +45,20 @@ public class JournalHandler {
 
     public void afficherJournal() {
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
+        File file = new File("Journal.txt");
+        if (file.exists()) {
 
-        } catch (IOException e){
-            e.printStackTrace();
+            try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(line);
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }else {
+            System.out.println("Aucun journal");
         }
     }
 
@@ -60,13 +66,18 @@ public class JournalHandler {
     public void sauvegarderBinaireJournal() {
         String journal = "";
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                journal += line + "\n";
+        File file = new File("Journal.txt");
+        if (file.exists()) {
+            try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    journal += line + "\n";
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e){
-            e.printStackTrace();
+        } else {
+            System.out.println("Aucun journal");
         }
 
         try (FileOutputStream out = new FileOutputStream("Journal_backup.dat")){
