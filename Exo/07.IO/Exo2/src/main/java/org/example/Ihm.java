@@ -15,7 +15,8 @@ public class Ihm {
             System.out.println("2. Afficher les activités");
             System.out.println("3. Sauvegarder en binaire");
             System.out.println("4. Lire le fichier binaire");
-            System.out.println("5. Quitter");
+            System.out.println("5. Ajouter une activiter choix limiter");
+            System.out.println("6. Quitter");
 
             System.out.println("Choisissez une option : ");
             String option = sc.nextLine();
@@ -38,6 +39,10 @@ public class Ihm {
                     break;
 
                 case "5":
+                    jh.ajouterActiviterChoixLimiter();
+                    break;
+
+                case "6":
                     System.out.println("bye");
                     ihm = false;
                     break;

@@ -3,6 +3,7 @@ package org.example;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Scanner;
 
 
@@ -19,27 +20,29 @@ public class JournalHandler {
         File file = new File("Journal.txt");
         if (file.exists()) {
 
-        try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                journal += line + "\n";
+            try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    journal += line + "\n";
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         }
 
-        try(BufferedWriter writer = new BufferedWriter(new FileWriter("Journal.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("Journal.txt"))) {
 
             writer.write(journal);
             SimpleDateFormat s = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
             Date date = new Date();
-            writer.write( s.format(date) + " - " + nomActiviter + "\n");
+            writer.write(s.format(date) + " - " + nomActiviter + "\n");
 
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
+
+        sauvegardeAutoToutLes5Activiter();
     }
 
 
@@ -57,7 +60,7 @@ public class JournalHandler {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }else {
+        } else {
             System.out.println("Aucun journal");
         }
     }
@@ -80,10 +83,10 @@ public class JournalHandler {
             System.out.println("Aucun journal");
         }
 
-        try (FileOutputStream out = new FileOutputStream("Journal_backup.dat")){
+        try (FileOutputStream out = new FileOutputStream("Journal_backup.dat")) {
 
             out.write(journal.getBytes());
-        } catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -108,7 +111,94 @@ public class JournalHandler {
 
     }
 
+    public void sauvegardeAutoToutLes5Activiter() {
 
+        int nbActivites = 0;
+
+        File file = new File("Journal.txt");
+        if (file.exists()) {
+
+            try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    nbActivites++;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        if (nbActivites % 5 == 0) {
+            sauvegarderBinaireJournal();
+        }
+    }
+
+
+    public void ajouterActiviterChoixLimiter() {
+
+        HashMap<Integer, String> choixLimiter = new HashMap();
+        int nbCompteurs = 1;
+
+        File fileA = new File("Activiter.txt");
+        if (fileA.exists()) {
+
+            try (BufferedReader reader = new BufferedReader(new FileReader("Activiter.txt"))) {
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    System.out.println(nbCompteurs + " - " + line);
+                    choixLimiter.put(nbCompteurs, line);
+                    nbCompteurs++;
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Entrer le chiffre de l activiter a rajouter au journal");
+            String chiffreActiviter = sc.nextLine();
+
+            String nomActiviter = choixLimiter.get(nbCompteurs - 1);
+
+
+            String journal = "";
+            File file = new File("Journal.txt");
+            if (file.exists()) {
+
+                try (BufferedReader reader = new BufferedReader(new FileReader("Journal.txt"))) {
+                    String line;
+                    while ((line = reader.readLine()) != null) {
+                        journal += line + "\n";
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter("Journal.txt"))) {
+
+                writer.write(journal);
+                SimpleDateFormat s = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+                Date date = new Date();
+                writer.write(s.format(date) + " - " + nomActiviter + "\n");
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+
+            sauvegardeAutoToutLes5Activiter();
+
+        } else {
+            System.out.println("Aucun dossier activiter");
+        }
+
+
+
+    }
 
 
 }
