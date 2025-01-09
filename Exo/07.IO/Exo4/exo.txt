@@ -1,0 +1,24 @@
+```plaintext
+--- Bienvenue dans le jeu d'aventure textuelle ! ---
+1. Créer un nouveau personnage
+2. Charger un personnage existant
+Choisissez une option : 1
+
+Entrez le nom de votre héros : Aragon
+Entrez la force (1-100) : 80
+Entrez la santé (1-100) : 90
+Personnage créé avec succès et sauvegardé.
+
+--- Début de l'aventure ---
+Événement : Vous rencontrez un monstre dans la forêt.
+Action : Combat
+Résultat : Vous avez battu le monstre !
+
+Événement : Vous trouvez un coffre mystérieux.
+Action : Ouvrir
+Résultat : Le coffre était piégé ! Vous perdez 10 points de santé.
+
+--- Fin de l'aventure ---
+Votre santé restante : 80
+Un journal de votre aventure a été généré : journal.txt
+```
