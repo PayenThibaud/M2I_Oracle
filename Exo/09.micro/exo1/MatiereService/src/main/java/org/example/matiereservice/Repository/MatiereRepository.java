@@ -8,4 +8,5 @@ import java.util.List;
 public interface MatiereRepository extends CrudRepository<Matiere, Integer> {
 
     List<Matiere> findByIdProf(int idProf);
+
 }
