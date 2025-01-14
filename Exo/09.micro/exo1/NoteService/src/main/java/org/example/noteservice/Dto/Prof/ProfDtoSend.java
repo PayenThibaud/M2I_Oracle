@@ -1,18 +1,16 @@
-package org.example.noteservice.Dto.Note;
+package org.example.noteservice.Dto.Prof;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Data
-public class NoteDtoSend {
-    private int id_note;
-    private int note;
-    private int id_matiere;
-    private int id_etudient;
+public class ProfDtoSend {
     private int id_prof;
+    private String nom;
+    private String dateNaissance;
 }

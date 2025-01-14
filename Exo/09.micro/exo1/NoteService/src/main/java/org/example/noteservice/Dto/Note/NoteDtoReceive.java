@@ -13,4 +13,5 @@ public class NoteDtoReceive {
     private int note;
     private int id_matiere;
     private int id_etudient;
+    private int id_prof;
 }

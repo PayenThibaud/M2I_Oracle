@@ -16,4 +16,6 @@ public class NoteDtoSendGet {
     private String nomMatiere;
     private int id_etudient;
     private String nomEtudient;
+    private int id_prof;
+    private String nomProf;
 }

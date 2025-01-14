@@ -22,4 +22,6 @@ public class Note {
     private int idMatiere;
     @Column(name = "id_etudient")
     private int idEtudient;
+    @Column(name = "id_prof")
+    private int idProf;
 }
