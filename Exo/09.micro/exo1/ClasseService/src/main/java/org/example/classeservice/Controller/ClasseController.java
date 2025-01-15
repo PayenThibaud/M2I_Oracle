@@ -44,8 +44,6 @@ public class ClasseController {
         return ResponseEntity.ok(classeService.getAllClasseByProf(idProf));
     }
 
-
-
     @DeleteMapping("/{id}")
     public ResponseEntity<String> delete(@PathVariable int id) {
         classeService.deleteClasse(id);

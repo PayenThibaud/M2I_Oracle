@@ -20,9 +20,9 @@ import java.util.List;
 @RequestMapping("classe")
 @CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE})
 public class ClasseController {
-    
+
     private ObjectMapper objectMapper = new ObjectMapper();
-    
+
     public ClasseController(ObjectMapper objectMapper) {
         this.objectMapper = objectMapper;
     }
