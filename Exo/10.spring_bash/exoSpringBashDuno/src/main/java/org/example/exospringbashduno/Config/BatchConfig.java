@@ -55,7 +55,7 @@ public class BatchConfig {
     @Bean
     public ItemProcessor<Dinosaur, Dinosaur> processor() {
         return dino -> {
-            dino.setAge(dino.getAge() / 100);
+            dino.setAge(dino.getAge() * 10000);
             return dino;
         };
     }
