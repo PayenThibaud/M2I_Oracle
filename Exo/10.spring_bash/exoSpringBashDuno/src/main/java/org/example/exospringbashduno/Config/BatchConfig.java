@@ -39,7 +39,7 @@ public class BatchConfig {
         return new FlatFileItemReaderBuilder<Dinosaur>()
                 .name("dinosaurItemReader")
                 .resource(new ClassPathResource("dinosaurs.csv"))
-                .linesToSkip(1) // Ignore la première ligne (entêtes)
+                .linesToSkip(1)
                 .delimited()
                 .names("id", "name", "species", "age")
                 .fieldSetMapper(new BeanWrapperFieldSetMapper<>() {{
