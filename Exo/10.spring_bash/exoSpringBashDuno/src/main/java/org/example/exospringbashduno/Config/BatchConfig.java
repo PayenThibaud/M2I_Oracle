@@ -64,6 +64,12 @@ public class BatchConfig {
     @Bean
     @Qualifier("jdbcWriter")
     public JdbcBatchItemWriter<Dinosaur> jdbcWriter(DataSource dataSource) {
+        List<ItemWriter<? super Dinosaur>> writers = new ArrayList<>();
+        writers.add(items -> {
+            System.out.println("Avant :");
+            items.forEach(dino -> System.out.println(dino));
+        });
+
         return new JdbcBatchItemWriterBuilder<Dinosaur>()
                 .itemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<>())
                 .sql("INSERT INTO dinosaur (id, name, species, age) VALUES (:id, :name, :species, :age) " +
@@ -78,14 +84,7 @@ public class BatchConfig {
         List<ItemWriter<? super Dinosaur>> writers = new ArrayList<>();
 
         writers.add(items -> {
-            System.out.println("Avant :");
-            items.forEach(dino -> System.out.println(dino));
-        });
-
-        writers.add(jdbcWriter(dataSource));
-
-        writers.add(items -> {
-            System.out.println("Apres :");
+            System.out.println("info :");
             items.forEach(dino -> System.out.println(dino));
         });
 
