@@ -20,7 +20,9 @@ import org.springframework.batch.item.support.CompositeItemWriter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
@@ -35,10 +37,11 @@ public class BatchConfig {
     }
 
     @Bean
+    @Scope("prototype")
     public FlatFileItemReader<Dinosaur> reader() {
         return new FlatFileItemReaderBuilder<Dinosaur>()
                 .name("dinosaurItemReader")
-                .resource(new ClassPathResource("dinosaurs.csv"))
+                .resource(new FileSystemResource("src/main/resources/dinosaurs.csv"))
                 .linesToSkip(1)
                 .delimited()
                 .names("id", "name", "species", "age")
@@ -47,6 +50,7 @@ public class BatchConfig {
                 }})
                 .build();
     }
+
 
     @Bean
     public ItemProcessor<Dinosaur, Dinosaur> processor() {
