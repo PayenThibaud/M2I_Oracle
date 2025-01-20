@@ -9,8 +9,14 @@ import reactor.core.publisher.Flux;
 @RequestMapping("/api")
 public class ArticleController {
 
+    private final ArticleService articleService;
+
+    public ArticleController(ArticleService articleService) {
+        this.articleService = articleService;
+    }
+
     @GetMapping("/articles")
-    public Flux<String> articles() {
-        return Flux.just("Introduction to Spring WebFlux", "Reactive Programming with Project Reactor", "Building APIs with Spring Boot");
+    public Flux<Article> articles() {
+        return articleService.getAllArticle();
     }
 }
