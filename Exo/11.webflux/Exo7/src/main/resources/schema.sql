@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS userWebFlux
+(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    email VARCHAR(30) NOT NULL,
+    active BOOLEAN DEFAULT true
+);

@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS orderwebflux (
+    id SERIAL PRIMARY KEY,
+    customer_name VARCHAR(100) NOT NULL,
+    total_amount NUMERIC NOT NULL,
+    status VARCHAR(20) CHECK (status IN ('PENDING', 'SHIPPED', 'DELIVERED')) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    );
+

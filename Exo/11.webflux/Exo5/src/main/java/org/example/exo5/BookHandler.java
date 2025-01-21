@@ -44,4 +44,10 @@ public class BookHandler {
         int id = Integer.parseInt(request.pathVariable("id"));
         return bookService.deleteBook(id).flatMap(book -> ok().bodyValue(book).switchIfEmpty(notFound().build()));
     }
+
+    public Mono<ServerResponse> getBooksByTitle(ServerRequest request) {
+        String title = request.pathVariable("title");
+        request.queryParam()
+        return bookService.getBooksByAuthor(title)
+    }
 }

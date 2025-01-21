@@ -41,4 +41,8 @@ public class BookService {
         books.remove(id);
         return Mono.empty();
     }
+
+    public Flux<Book> getBooksByAuthor(String title) {
+        return Flux.fromIterable(books.values()).filter(book -> book.getTitle().equals(title));
+    }
 }

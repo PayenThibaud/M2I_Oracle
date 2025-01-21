@@ -15,6 +15,7 @@ public class BookRouter {
     public RouterFunction<ServerResponse> bookRoutes(BookHandler bookHandler) {
         return route(GET("/api/books"), bookHandler::getAllBook)
                 .andRoute(GET("/api/books/{id}"), bookHandler::getBookById)
+                .andRoute(GET("/api/books/search?title=XYZ"), bookHandler::getBooksByTitle)
                 .andRoute(POST("/api/books"), bookHandler::createBook)
                 .andRoute(PUT("/api/books/{id}"), bookHandler::updateBook)
                 .andRoute(DELETE("/api/books/{id}"), bookHandler::deleteBook);
