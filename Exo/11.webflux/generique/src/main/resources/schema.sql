@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS entitygenerique (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age NUMERIC NOT NULL
+    );
