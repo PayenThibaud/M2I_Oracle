@@ -12,10 +12,8 @@ import java.util.List;
 @Service
 public class ClientService extends GeneriqueServiceImpl<ClientDtoReceive, ClientDtoSend, Client> {
 
-    @Autowired
     private final ClientRepository clientRepository;
 
-    @Autowired
     public ClientService(ClientRepository clientRepository) {
         super(clientRepository);
         this.clientRepository = clientRepository;

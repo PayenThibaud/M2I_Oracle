@@ -1,0 +1,15 @@
+package org.example.auteurapi.Dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+@Data
+public class AuteurDtoSend {
+    private int id_auteur;
+    private String nom;
+}

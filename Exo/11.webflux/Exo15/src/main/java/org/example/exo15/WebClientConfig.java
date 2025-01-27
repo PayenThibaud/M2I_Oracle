@@ -7,6 +7,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.netty.http.client.HttpClient;
 import reactor.netty.resources.ConnectionProvider;
 
+// http://localhost:8080/actuator/metrics
+
 @Configuration
 public class WebClientConfig {
 
